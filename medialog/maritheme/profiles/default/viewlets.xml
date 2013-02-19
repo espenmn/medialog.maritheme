@@ -40,6 +40,7 @@
 
   <hidden manager="plone.portalheader" skinname="Maritheme Theme">
 	<viewlet name="plone.path_bar"/>
+	<viewlet name="maritheme_siteactions"/>
 	<viewlet name="plone.site_actions"/>
 	<viewlet name="plone.app.i18n.locales.languageselector"/>
   </hidden>
