@@ -1,0 +1,874 @@
+/* Stylesheet for the 'Maritheme Theme' Plone theme */
+/* Espen Moe-Nilssen, 2012, espen at medialog dot no */
+
+body {
+	position: relative;
+	margin: 0px;
+	padding: 0px;
+	background: #187BAF url(bottom_image.jpg) no-repeat fixed right bottom;
+	color: #454340;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10pt;	
+}
+
+#visual-portal-wrapper {
+	position: relative;
+	text-align: left;
+	position: relative;
+	width: 100%;
+	background: white;
+}
+
+/* @group Top */
+
+#portal-top {
+	width: 100%;
+}
+
+#portal-header {
+	height: 100px;
+	background-repeat: no-repeat;
+	background-position: 140px 45px;
+}
+
+#portal-header,
+#portal-columns > tbody {
+	width: 982px;
+	margin: 0px auto;
+	display: block;
+	padding: 0;
+	table-layout: fixed;
+	max-width: 982px;
+}
+
+#portal-logo {
+	width: 181px;
+	float: left;
+}
+
+#portal-logo img {
+	float: left;
+	margin: 0;
+	padding: 0;
+}
+
+/* @end */
+
+/* @group Columns */
+
+#portal-columns {
+	width: 100% !important;
+	border-top: 1px solid #D2D2D2;
+	background-repeat: repeat-x;
+	background-color: #ffffff;
+	margin: 0px auto;
+	padding-bottom: 35px;
+}
+
+#portal-column-one {
+	width: 210px;
+	padding-top: 20px;
+}
+
+#portal-column-two {
+	width: 175px;
+	padding-top: 20px;
+	padding-left: 20px;
+	padding-right: 15px;
+	border-left:  1px solid #ccc;
+}
+
+#portal-column-content {
+	padding: 20px 0;
+	background: #FFF;
+	min-width: 492px;
+}
+
+body.template-search #portal-column-content {
+	min-width: 912px;
+}
+
+/* @end */
+
+/* login form */
+
+form#login_form {
+	border: 1px solid #CCC;
+	padding: 20px 20px 0;
+	margin: 20px 0;
+}
+
+#login_form label {
+	width: 110px;
+	display: block;
+	float: left;
+}
+
+/*content actions */
+
+.contentActions a {
+	text-decoration: none;
+}
+
+/* @group Siteactions and personaltools */
+
+/*siteactions */
+
+div#portal-personaltools-wrapper {
+	width: 60px;
+	padding-top: 8px;
+	float: right;
+	overflow: visible;
+}
+
+a#user-name {
+	color: white;
+	padding-left: 10px;
+}
+
+ul#portal-personaltools li {
+	list-style-type: none;
+	list-style-image: none;
+	display: block;
+	float: right;
+	overflow: visible;
+	text-align: right;
+}
+
+ul#portal-personaltools	a {
+	color: white !important;
+}
+
+ul#portal-siteactions {
+	width: 650px;
+	height: 30px;
+	float: right;
+}
+
+ul#portal-siteactions li {
+	float: right;
+	list-style-image: none;
+	list-style-type: none;
+	padding: 0 10px;
+	border-right: 1px solid white;
+	line-height: 20px;
+}
+
+ul#portal-siteactions li:first-child {
+	
+}
+
+ul#portal-siteactions li img {
+	margin: -5px 3px;
+}
+
+/* @end */
+
+/* @group Searching */
+
+ul#portal-siteactions li a {
+	color: white;
+	text-decoration: none;
+}
+
+/*Portal Search box*/
+
+#portal-searchbox {
+	width: 210px;
+	float: right;
+	padding: 0;
+	height: 29px;
+	margin-top: 63px;
+	background: url('bg_topmenu.jpg');
+}
+
+input#searchGadget {
+	padding: 3px 5px;
+	margin-top: 3px;
+	margin-left: 8px;
+	border-color: #CCC;
+}
+
+div.searchSection {
+	display: none;
+}
+
+.searchField.inputLabel {
+	width: 125px;
+	margin-left: 8px;
+}
+
+#portal-searchbox input.searchButton {
+	border: 0 none;
+	text-indent: -999em;
+	background: transparent url('searchbutton.png');
+	background-repeat: no-repeat;
+	background-position: 2px;
+	height: 27px;
+	margin: 0;
+	width: 34px;
+	overflow: hidden;
+}
+
+legend#livesearchLegend {
+	background: transparent;
+}
+
+#LSShadow fieldset.livesearchContainer {
+	background: white;
+}
+
+.searchResults dt {
+	margin-top: 18px;
+	margin-bottom: 2px;
+}
+
+.searchResults dt a {
+	font-weight: bold;
+}
+
+.template-search h1 {
+	margin-top: 35px;
+}
+
+.template-search #portal-columns div#portal-breadcrumbs {
+	display: none;
+}
+
+.searchPage p.discreet {
+	float: right;
+}
+
+.discreet a.link-feed {
+	text-decoration: none;
+	color: #777;
+	padding-right: 35px;
+	background-image: url(RSS.png);
+	background-repeat: no-repeat;
+	background-position: right;
+	height: 34px;
+	display: block;
+	text-align: right;
+}
+
+dl.searchResults {
+	margin-bottom: 34px;
+}
+
+/* @end */
+
+/* @group Globalnav */
+
+/* Globalnav */
+
+#portal-globalnav {
+	display: block;
+	width: auto;
+	padding: 0;
+	float: right;
+	margin-top: 63px;
+	border-right: 1px solid #333;
+	height: 29px;
+}
+
+#portal-globalnav li {
+	line-height: 28px;
+	height: 28px;
+	float: left;
+	display: block;
+	margin-top: 0px;
+	text-align: center;
+	border-right: solid 1px #fff;
+	border-bottom: solid 1px #fff;
+	background: url(bg_topmenu.jpg);
+	list-style-type: none;
+	list-style-image: none;
+}
+
+#portal-globalnav li a {
+	height: 28px;
+	display: block;
+	text-decoration: none;
+	padding: 0 18px;
+}
+
+#portal-globalnav li a:visited {
+	color: #003976;
+}
+
+#portal-globalnav li.selected {
+	color: #003976;
+	border-left: solid 1px #D3D3D3;
+	border-bottom: solid 1px #fff;
+	background: transparent url(bgtopmenu_selected.png) no-repeat right;
+	font-weight: bold;
+	height: 29px;
+}
+
+#portal-globalnav a:visited, #portal-globalnav a:visited {
+	color: #003976;
+}
+
+#portaltab-index_html {
+	background-image: url(bg_topmenu_selected_corner.png);
+}
+
+/* @end */
+
+/* @group tekst */
+
+#content div.relatedItems {
+	margin: 10px 0;
+	padding: 10px 35px 10px 15px;
+	border: 1px solid;
+	border: 1px solid #c6c6c6;
+	background-image: url(hyperlink_blue.png);
+	background-position: right 8px;
+	background-repeat: no-repeat;
+}
+
+#relatedItemBox dt {
+	margin-bottom: 3px;
+	font-weight: bold;
+	color: #7c7c7c;
+}
+
+/* text */
+
+p {
+	font-size: 10pt;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 8px;
+	margin-left: 0px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-weight: normal;
+	color: #656352;
+	margin: 10px 0 0 0;
+}
+
+h1 {
+	font-size: 21px;
+	margin-top: 4px;
+	margin-bottom: 8px;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	color: #454340;
+	margin-bottom: 12px;
+	padding-bottom: 8px;
+	border-bottom-width: 1px;
+	border-bottom-style: dashed;
+	border-bottom-color: #909090;
+}
+
+h2 {
+	font-size: 18px;
+	margin-top: 24px;
+	margin-right: 0px;
+	margin-bottom: 8px;
+	color: #656352;
+}
+
+h3 {
+	font-size: 10pt;
+	color: #323129;
+	margin-top: 12px;
+	margin-bottom: 6px;
+	font-weight: bold;
+}
+
+h4 {
+	font-size: 18px;
+	color: #ffffff;
+	padding-top: 2px;
+}
+
+h5 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: bold;
+	color: #3C3A31;
+}
+
+h6 {
+	color: #3C3A31;
+}
+
+.documentDescription {
+	font-size: 10pt;
+	margin-bottom: 18px;
+
+
+/*
+
+er 8 i originalen */
+}
+
+form {
+	margin: 0px;
+}
+
+input {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	padding: 2px 5px;
+	margin-top: 0;
+}
+
+img {
+	border: 0px;
+}
+
+img.image-left {
+	float: left;
+	margin: 2px 10px 10px 0;
+}
+
+img.image-right {
+	float: right;
+	margin: 2px 0px 10px 10px;
+}
+
+dl.portalMessage {
+	background: #f4e16a;
+	padding: 10px 15px;
+	margin: 10px 0;
+;
+}
+
+img.tileImage {
+	float: right;
+	border: 1px solid #889BB1;
+	margin-left: 15px;
+	margin-bottom: 10px;
+}
+
+.visualIEFloatFix {
+	margin-top: 6px;
+	margin-bottom: 25px;
+	padding-bottom: 12px;
+	border-bottom-width: 1px;
+	border-bottom-style: dashed;
+	border-bottom-color: #909090;
+}
+
+.visualIEFloatFix .tileFooter a {
+	display: none
+}
+
+a {
+	color: #003976;
+	font-size: 10pt;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	text-decoration: underline;
+}
+
+a:link {
+	color: #003976;
+	text-decoration: underline;
+}
+
+a:hover {
+	color: #889BB1;
+	text-decoration: none;
+}
+
+a:visited {
+	color: #832328;
+
+
+/*
+
+#9d1f28*/
+}
+
+ul, ol {
+	margin-top: 8px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	margin-left: 0px;
+	padding-left: 20px;
+}
+
+ol {
+	padding-left: 30px;
+}
+
+li {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 6px;
+	margin-left: 0px;
+	list-style-image: url(arrow.gif);
+	padding: 0px;
+	font-size: 10pt;
+}
+
+p.discreet {
+	color: #777;
+}
+
+/* @end */
+
+/* @group tables */
+
+table td {
+	vertical-align: top;
+}
+
+table.listing,
+.stx table {
+	/* 
+
+The default table for document listings. */
+    /* 
+
+Contains name, document types, modification times etc in a file-browser-like fashion */
+    border-spacing: 0;
+	border: solid 1px #d7d4cd !important;
+	margin: 1em 0em 1em 0em;
+	width: 99%;
+	font-size: 11px;
+	background: white;
+	padding: 1px
+}
+
+#parent-fieldname-text-ceffd4a12b074e8a9d1c1eb943b4c745 table.listing tbody {
+	border: solid 1px #d7d4cd !important;
+}
+
+table.listing th,
+.stx table th {
+	margin: 0px;
+	padding-bottom: 10px;
+	padding-left: 8px;
+	padding-right: 5px;
+	padding-top: 10px;
+	background-color: #d7d4cf;
+	text-align: left;
+	border-left: 1px solid white;
+}
+
+table.listing th:first-child,
+.stx table th {
+	text-align: left;
+	border-left: 0 none;
+}
+
+table.listing .top {
+	border-left: 1px solid #fff;
+	border-top: 1px solid #EEE ! important;
+	border-right: 1px solid #fff ! important;
+	text-align: right ! important;
+	padding: 0em 0em 1em 0em;
+}
+
+table.listing .listingCheckbox {
+	text-align: center;
+}
+
+table.listing td,
+.stx table td {
+	margin-bottom: 0px;
+	border-right: 1px solid white;
+	border-bottom: 1px solid white;
+	padding-bottom: 5px;
+	padding-left: 8px;
+	padding-right: 5px;
+	padding-top: 5px;
+}
+
+table.invisible {
+	margin: 10px 0;
+	font-size: 11px;
+}
+
+table.invisible tbody td {
+	padding: 3px 10px 3px 0;
+}
+
+table.listing a {
+	text-decoration: none;
+}
+
+table.listing a:hover {
+	text-decoration: underline;
+}
+
+table.listing img {
+	vertical-align: middle;
+}
+
+table.listing td a label,
+.stx table td a label {
+	cursor: pointer;
+}
+
+/* Vertical addition class */
+
+table.vertical {
+	
+}
+
+table.vertical th {
+	padding: 0.5em;
+	border-top: none;
+}
+
+table.vertical td {
+	border-top: 1px solid #fff;
+	padding: 0.5em;
+}
+
+/* grid addition class */
+
+table.grid td {
+	border: 1px solid #DDD;
+}
+
+/* plain table class with light gray borders */
+
+table.plain,
+table.plain td,
+table.plain th {
+	border: 1px solid #ccc !important;
+	padding: 0.5em;
+}
+
+.listing tr.odd,
+tr.tittel {
+	background-color: #f7f6f4;
+}
+
+.grid.listing tbody tr:nth-child(odd) {
+	background: #FEFEFE;
+}
+
+.listing tr.odd .fieldRequired {
+	color: #e5eff3;
+}
+
+.listing tr.even {
+	background-color: #efeeea;
+}
+
+.listing tr.even .fieldRequired {
+	color: #cce0e7;
+}
+
+.listing tr.selected {
+	background-color: #DDD;
+}
+
+/* @end */
+
+/* @group breadcrumbs */
+
+#portal-breadcrumbs {
+	font-size: 11px;
+	line-height: 20px;
+	margin-bottom: 20px;
+}
+
+#portal-breadcrumbs a {
+	font-size: 11px;
+}
+
+.breadcrumbSeparator {
+	content: "/" !important;
+}
+
+#breadcrumbs-you-are-here {
+	display: none;
+}
+
+/* @end */
+
+/* @group portlets */
+
+/*portlets*/
+
+.portlet  a {
+	text-decoration: none;
+	display: block;
+}
+
+.portletNavigationTree ul {
+	padding-left: 0;
+}
+
+.portletNavigationTree li {
+	line-height: 20px;
+	list-style-type: none;
+	list-style-image: none;
+}
+
+.navTreeFolderish {
+	background-image: url(pil_meny.png);
+	background-repeat: no-repeat;
+	background-position: 1px 9px
+}
+
+.portletNavigationTree a {
+	border-bottom: 1px solid #c6c6c6;
+	text-decoration: none;
+	display: block;
+	padding-left: 22px;
+	padding-top: 5px;
+	padding-bottom: 10px;
+}
+
+dt.portletHeader  a {
+	text-decoration: none;
+	color: #353535;
+	text-transform: uppercase;
+	font-size: 13px;
+	font-weight: bold;
+	padding-left: 0;
+	border-bottom: 1px solid #c6c6c6;
+	padding-top: 5px;
+	padding-bottom: 10px;
+}
+
+.portletItem {
+	margin-top: 12px;
+}
+
+.portletItemDetails {
+	clear: both;
+	display: block;
+	float: right;
+	font-size: 10px;
+	color: #777;
+	;
+	width: 100%;
+	margin-top: 3px;
+	margin-bottom: 12px;
+	text-align: right;
+}
+
+.portletFooter {
+	clear: both;
+	display: block;
+	text-indent: 24px;
+}
+
+.portletFooter a {
+	background-image: url(pil_meny.png);
+	background-repeat: no-repeat;
+	background-position: 2px;
+	text-indent: 24px;
+}
+
+.portletNavigationTree a.navTreeCurrentItem {
+	color: #000000;
+	font-weight: bold;
+}
+
+/*footer and colophon*/
+
+#portal-colophon,
+#portal-footer {
+	border-top: solid 1px #b5b3ae;
+	text-align: center;
+	padding-top: 20px;
+	color: #f1f7f9;
+	clear: both;
+	margin: 0;
+}
+
+#portal-footer  a:visited {
+	color: #dadcde;
+}
+
+#portal-footer  a {
+	color: #dcdddd;
+	text-decoration: underline;
+}
+
+#portal-footer a:hover {
+	text-decoration: none;
+	color: #e4bd6f;
+}
+
+/* @end */
+
+/* @group HFK */
+
+#headerTopRow
+{
+	clear:both;
+	height:30px;
+	vertical-align:middle;
+	font-size:60%;
+	font-family:Verdana;
+}
+#headerTopRowLinks
+{
+	list-style-type:none;
+	padding-left:0px;
+	padding-top:0px;
+	margin:0px 0px 0px 0px;
+}
+#headerTopRightColumn
+{
+	float:right;
+	vertical-align:middle;
+}
+#headerTopRowLinks li
+{
+	float:left;
+}
+#headerTopRowLinks span
+{
+	float:left;
+	background-position:left center;
+	background-repeat:no-repeat;
+	margin-left:10px;
+	padding:4px 0px 5px 22px;
+	vertical-align:middle;
+	height:100%;
+}
+#headerTopRowLinks a
+{
+	color:Black;
+}
+#linkSkoleportalen
+{
+	background-image:url("skoleportalen_icon.gif");
+	cursor:pointer;
+}
+#linkItslearning
+{
+	background-image:url("its_learning.gif");
+	cursor:pointer;
+}
+#linkMyLibrary
+{
+	background-image:url("mittbibliotek.png");
+	cursor:pointer;
+}
+#linkEMail
+{
+	background-image:url("email.gif");
+	cursor:pointer;
+}
+#headerFunctionLinks
+{
+	margin-right:20px;
+}
+#headerFunctionLinks a
+{
+	text-decoration:none;
+	color:Black;
+}
+#headerHFKLogo
+{
+	vertical-align:middle;
+	border-style:none;
+}
+
+/* @end */
