@@ -1,6 +1,7 @@
 /* @override http://localhost:8080/maritime/portal_css/Maritheme%20Theme/++resource++medialog.maritheme.stylesheets/main.css */
 
 /* Stylesheet for the 'Maritheme Theme' Plone theme */
+
 /* Espen Moe-Nilssen, 2012, espen at medialog dot no */
 
 body {
@@ -10,7 +11,7 @@ body {
 	background: #187BAF url(bottom_image.jpg) no-repeat fixed right bottom;
 	color: #454340;
 	font-family: Verdana, Arial, Helvetica, sans-serif;
-	font-size: 10pt;	
+	font-size: 10pt;
 }
 
 #visual-portal-wrapper {
@@ -26,7 +27,7 @@ body {
 #portal-top {
 	width: 100%;
 	background: #FAFAFA;
-
+	background: transparent url(000forlopv.jpg) top left repeat-x;
 }
 
 #portal-header {
@@ -55,7 +56,156 @@ body {
 	padding: 0;
 }
 
+
+
+#portal-topactions {
+	margin-top: 5em;
+	float: right;
+}
+
+#portal-topactions a {
+	color: #fff;
+}
+
+
+.LSBox {
+	position: relative;
+}
+
+#portal-searchbox input#searchGadget {
+	font-size: 1em;
+	font-family: Arial, san-serif;
+	outline: none;
+	width: 17em;
+	padding: 0.3em 0.7em;
+	color: #474747;
+	background: #fff;
+	-moz-box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.4);
+	-webkit-box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.4);
+	box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.4);
+	border-width: 0px;
+	-moz-border-radius: 12px;
+	-webkit-border-radius: 12px;
+	border-radius: 12px;
+}
+
+#portal-searchbox button {
+	background: transparent url("search_icon.png") 50% 50% no-repeat;
+	height: 16px;
+	width: 16px;
+	border: none;
+	position: absolute;
+	z-index: 1;
+	right: 0.5em;
+	top: 0.3em;
+	overflow: hidden;
+	cursor: pointer;
+}
+
+
+#portal-searchbox {
+	background-color: transparent;
+	margin: 4.8em 0 0 0;
+	padding: 0;
+	text-align: right;
+	white-space: nowrap;
+	z-index: 2;
+}
+
+#portal-advanced-search {
+	margin-top: 0.2em;
+	clear: both;
+}
+
+#portal-advanced-search a {
+	text-decoration: none;
+}
+
+dl.searchResults dt {
+	font-size: 140%;
+	font-weight: normal;
+}
+
+form.searchPage {
+	text-align: center;
+}
+
+
+form.searchPage input.searchButton {
+	background-position: 5px 7px;
+	padding: 1px 10px;
+}
+
+
+
 /* @end */
+
+/* @group globalnav */
+
+/*
+  For SubSkins
+     (not this either)
+*/
+
+ #portal-globalnav {
+	clear: both;
+	padding: 0 5px;;
+	margin: 10px;
+       display: inline;  
+    list-style: none;  
+}
+
+#portal-globalnav li a  {
+   color: #ffffff;  
+    padding: 5px 15px;  
+    outline: none;  
+    text-decoration: none;  
+
+/* Border Radius */  
+    -webkit-border-radius: 15px;  
+    -moz-border-radius: 15px;  
+    border-radius: 15px;  
+  
+    /* Border Shadow */  
+    -webkit-box-shadow: 1px 2px 2px rgba(0,0,0,0.6);  
+    -moz-box-shadow: 1px 2px 2px rgba(0,0,0,0.6);  
+    box-shadow: 1px 2px 2px rgba(0,0,0,0.6);  
+  
+    background: #CC0032;  
+
+    /* Animation (Webkit, Gecko & Mozilla) */  
+    -webkit-transition-duration: 0.20s;  
+    -webkit-transition-timing-function: ease-out;  
+    -moz-transition-duration: 0.20s;  
+    -moz-transition-timing-function: ease-out;  
+    margin-right:4px;
+}
+
+#portal-globalnav li {
+    display: block;
+    float: left;
+}
+
+ 
+#portal-globalnav li a:hover {  
+        background: #FFCC00;   
+    padding: 5px 25px;  
+}  
+  
+#portal-globalnav li.selected a {  
+     background: #FFCC00;  
+    -webkit-box-shadow: 1px 1px 1px rgba(0,0,0,0.4);  
+    -moz-box-shadow: 1px 1px 1px rgba(0,0,0,0.4);  
+    box-shadow: 1px 1px 1px rgba(0,0,0,0.4);  
+}  
+
+
+/* */
+
+/* @end */
+
+
+
 
 /* @group Columns */
 
@@ -74,7 +224,7 @@ body {
 #portal-column-one {
 	width: 175px;
 	padding-top: 20px;
-	padding-right:35px;
+	padding-right: 35px;
 }
 
 #portal-column-two {
@@ -82,7 +232,7 @@ body {
 	padding-top: 20px;
 	padding-left: 20px;
 	margin-left: 25px;
-	border-left:  1px solid #ccc;
+	border-left: 1px solid #ccc;
 }
 
 #portal-column-content {
@@ -161,9 +311,7 @@ ul#portal-siteactions li {
 	line-height: 20px;
 }
 
-ul#portal-siteactions li:first-child {
-	
-}
+
 
 ul#portal-siteactions li img {
 	margin: -5px 3px;
@@ -173,13 +321,183 @@ ul#portal-siteactions li img {
 
 /* @group Searching */
 
+
+
+
+#livesearch-advanced-search,
+#livesearch-all-items {
+	font-size: 0.85em;
+	margin-top: 1.25em;
+	font-family: Helvetica, Arial, sans-serif;
+	border-top: 1px solid #555;
+}
+
+#livesearch-all-items {
+	margin-top: 0;
+}
+
+.LSRes {
+	visibility: visible;
+	vertical-align: middle;
+	display: block;
+	list-style-image: none;
+	list-style-type: none;
+	text-align: left;
+	min-width: 16.5em;
+	text-transform: none;
+	margin-left: 0;
+	line-height: 1.1em;
+}
+
+#LSHighlight,
+.LSHighlight {
+	background-color: #646464;
+	color: #fff;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-top-left-radius: 5px;
+	-webkit-border-top-right-radius: 5px;
+	-webkit-border-bottom-left-radius: 5px;
+	-webkit-border-bottom-right-radius: 5px;
+}
+
+.LSTable {
+	margin: 0;
+}
+
+.LSRow {
+	white-space: normal;
+	padding: 0;
+	margin: 0;
+	list-style-image: none;
+	list-style-type: none;
+	font-family: Georgia, Baskerville, Times, "Times New Roman", serif;
+}
+
+.LSRow a {
+	display: block;
+	padding: 0.31em 0.46em;
+	margin: 1px 0;
+	text-decoration: none;
+	color: #fff;
+	font-family: Helvetica, Arial, sans-serif;
+	position: relative;
+}
+
+#LSHighlight a,
+.LSHighlight a,
+.LSRow a:hover {
+	color: #fff;
+	text-shadow: 0 0 2px #333;
+}
+
+.LSDescr {
+	color: #aaa;
+	font-size: 0.8em;
+	font-weight: normal;
+	margin-left: 2.5em;
+	text-shadow: none;
+	font-family: Verdana, Helvetica, Arial, sans-serif;
+}
+
+#LSHighlight .LSDescr,
+.LSHighlight .LSDescr {
+	color: #f7f7f7;
+}
+
+.LSResult {
+	position: relative;
+	display: block;
+	text-align: right;
+	margin: 0;
+	left: 3px;
+	z-index: 5;
+}
+
+.LSShadow {
+	position: relative;
+	text-align: right;
+}
+
+.livesearchContainer {
+	padding: 0 !important;
+	position: absolute;
+	right: 0px;
+	color: #aaa;
+	top: 12px;
+	white-space: normal;
+	visibility: visible;
+	text-align: left;
+	width: 30em;
+	text-transform: none;
+	margin: 0;
+	border: 1px solid #000000;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-top-left-radius: 5px;
+	-webkit-border-top-right-radius: 5px;
+	-webkit-border-bottom-left-radius: 5px;
+	-webkit-border-bottom-right-radius: 5px;
+	background-color: #000000;
+	background-color:  rgba(0, 0, 0, 0.9);
+	box-shadow: 0px 0px 4px #777;
+	-moz-box-shadow: 0px 0px 4px #777;
+	-webkit-box-shadow: 0px 0px 4px #777;
+}
+
+* html .livesearchContainer {
+	padding: 1px !important;
+	padding-top: 0 !important;
+	border: 0;
+}
+
+#livesearchLegend {
+	display: none;
+}
+
+* html #livesearchLegend {
+	position: relative;
+}
+
+/* */
+
+.LSIEFix {
+	background-color: transparent;
+	padding: 0.76em 0.46em !important;
+	z-index: 20;
+	margin: 1px;
+	border: 1px solid #fff;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-top-left-radius: 5px;
+	-webkit-border-top-right-radius: 5px;
+	-webkit-border-bottom-left-radius: 5px;
+	-webkit-border-bottom-right-radius: 5px;
+}
+
+.LSBox {
+	clear: left;
+	float: left;
+	text-align: right;
+	padding-right: 1px;
+	display: block;
+}
+
+#LSNothingFound {
+	text-align: center;
+	padding: 2px;
+}
+
+.LSBox label {
+	font-weight: normal;
+}
+
 ul#portal-siteactions li a {
 	color: white;
 	text-decoration: none;
 }
 
 /*Portal Search box*/
-
 
 .searchResults dt {
 	margin-top: 18px;
@@ -304,8 +622,6 @@ h6 {
 .documentDescription {
 	font-size: 10pt;
 	margin-bottom: 18px;
-
-
 /*
 
 er 8 i originalen */
@@ -382,8 +698,6 @@ a:hover {
 
 a:visited {
 	color: #832328;
-
-
 /*
 
 #9d1f28*/
@@ -426,10 +740,14 @@ table td {
 
 table.listing,
 .stx table {
-	/* 
+	
+
+/* 
 
 The default table for document listings. */
-    /* 
+    
+
+/* 
 
 Contains name, document types, modification times etc in a file-browser-like fashion */
     border-spacing: 0;
@@ -586,8 +904,6 @@ tr.tittel {
 	content: "/" !important;
 }
 
-
-
 /* @end */
 
 /* @group portlets */
@@ -702,78 +1018,77 @@ dt.portletHeader  a {
 
 /* @group HFK */
 
-#headerTopRow
-{
-	clear:both;
-	height:30px;
-	vertical-align:middle;
-	font-family:Verdana;
+#headerTopRow {
+	clear: both;
+	height: 30px;
+	vertical-align: middle;
+	font-family: Verdana;
 }
-#headerTopRowLinks
-{
-	list-style-type:none;
-	padding-left:0px;
-	padding-top:0px;
-	margin:0px 0px 0px 0px;
+
+#headerTopRowLinks {
+	list-style-type: none;
+	padding-left: 0px;
+	padding-top: 0px;
+	margin: 0px 0px 0px 0px;
 }
-#headerTopRightColumn
-{
-	float:right;
-	vertical-align:middle;
+
+#headerTopRightColumn {
+	float: right;
+	vertical-align: middle;
 }
-#headerTopRowLinks li
-{
-	float:left;
+
+#headerTopRowLinks li {
+	float: left;
 	list-style-image: none;
 	font-size: 4px !important;
 }
-#headerTopRowLinks span
-{
-	float:left;
-	background-position:left center;
-	background-repeat:no-repeat;
-	margin-left:10px;
-	padding:4px 0px 5px 22px;
-	vertical-align:middle;
-	height:100%;
+
+#headerTopRowLinks span {
+	float: left;
+	background-position: left center;
+	background-repeat: no-repeat;
+	margin-left: 10px;
+	padding: 4px 0px 5px 22px;
+	vertical-align: middle;
+	height: 100%;
 }
-#headerTopRowLinks a
-{
-	color:Black;
+
+#headerTopRowLinks a {
+	color: Black;
 }
-#linkSkoleportalen
-{
-	background-image:url("skoleportalen_icon.gif");
-	cursor:pointer;
+
+#linkSkoleportalen {
+	background-image: url("skoleportalen_icon.gif");
+	cursor: pointer;
 }
-#linkItslearning
-{
-	background-image:url("its_learning.gif");
-	cursor:pointer;
+
+#linkItslearning {
+	background-image: url("its_learning.gif");
+	cursor: pointer;
 }
-#linkMyLibrary
-{
-	background-image:url("mittbibliotek.png");
-	cursor:pointer;
+
+#linkMyLibrary {
+	background-image: url("mittbibliotek.png");
+	cursor: pointer;
 }
-#linkEMail
-{
-	background-image:url("email.gif");
-	cursor:pointer;
+
+#linkEMail {
+	background-image: url("email.gif");
+	cursor: pointer;
 }
-#headerFunctionLinks
-{
-	margin-right:20px;
+
+#headerFunctionLinks {
+	margin-right: 20px;
 }
-#headerFunctionLinks a
-{
-	text-decoration:none;
-	color:Black;
+
+#headerFunctionLinks a {
+	text-decoration: none;
+	color: Black;
 }
-#headerHFKLogo
-{
-	vertical-align:middle;
-	border-style:none;
+
+#headerHFKLogo {
+	vertical-align: middle;
+	border-style: none;
 }
 
 /* @end */
