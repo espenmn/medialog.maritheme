@@ -1,4 +1,7 @@
-/* @override http://localhost:8080/maritime/portal_css/Maritheme%20Theme/++resource++medialog.maritheme.stylesheets/main.css */
+/* @override 
+	http://localhost:8080/maritime/portal_css/Maritheme%20Theme/++resource++medialog.maritheme.stylesheets/main.css
+	http://maritime.medialog.no/portal_css/Maritheme%20Theme/resourcemedialog.maritheme.stylesheetsmain-cachekey4935.css
+*/
 
 /* Stylesheet for the 'Maritheme Theme' Plone theme */
 
@@ -27,7 +30,6 @@ body {
 #portal-top {
 	width: 100%;
 	background: #FAFAFA;
-	background: transparent url(000forlopv.jpg) top left repeat-x;
 }
 
 #portal-header {
@@ -52,7 +54,7 @@ body {
 
 #portal-logo img {
 	float: left;
-	margin: 0;
+	margin: 10px 0 0 ; 
 	padding: 0;
 }
 
@@ -76,8 +78,8 @@ body {
 	font-size: 1em;
 	font-family: Arial, san-serif;
 	outline: none;
-	width: 17em;
-	padding: 0.3em 0.7em;
+	width: 13em;
+	padding: 8px 0.7em;
 	color: #474747;
 	background: #fff;
 	-moz-box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.4);
@@ -104,8 +106,9 @@ body {
 
 
 #portal-searchbox {
+	float: right;
 	background-color: transparent;
-	margin: 4.8em 0 0 0;
+	margin-top:  46px;;
 	padding: 0;
 	text-align: right;
 	white-space: nowrap;
@@ -148,11 +151,13 @@ form.searchPage input.searchButton {
 */
 
  #portal-globalnav {
-	clear: both;
+	
 	padding: 0 5px;;
-	margin: 10px;
-       display: inline;  
-    list-style: none;  
+	list-style: none;  
+    float: left;
+    margin-top: 54px;
+    margin-left: 25px;
+    
 }
 
 #portal-globalnav li a  {
@@ -162,16 +167,16 @@ form.searchPage input.searchButton {
     text-decoration: none;  
 
 /* Border Radius */  
-    -webkit-border-radius: 15px;  
-    -moz-border-radius: 15px;  
-    border-radius: 15px;  
+    -webkit-border-radius: 6px 0 6px 0;
+    -moz-border-radius: 6px 0 6px 0;  
+    border-radius: 6px 0 6px 0;  
   
     /* Border Shadow */  
     -webkit-box-shadow: 1px 2px 2px rgba(0,0,0,0.6);  
     -moz-box-shadow: 1px 2px 2px rgba(0,0,0,0.6);  
     box-shadow: 1px 2px 2px rgba(0,0,0,0.6);  
   
-    background: #CC0032;  
+    background: #092e5f;  
 
     /* Animation (Webkit, Gecko & Mozilla) */  
     -webkit-transition-duration: 0.20s;  
@@ -188,8 +193,7 @@ form.searchPage input.searchButton {
 
  
 #portal-globalnav li a:hover {  
-        background: #FFCC00;   
-    padding: 5px 25px;  
+        background: #3e7135;   
 }  
   
 #portal-globalnav li.selected a {  
@@ -321,9 +325,6 @@ ul#portal-siteactions li img {
 
 /* @group Searching */
 
-
-
-
 #livesearch-advanced-search,
 #livesearch-all-items {
 	font-size: 0.85em;
@@ -335,6 +336,16 @@ ul#portal-siteactions li img {
 #livesearch-all-items {
 	margin-top: 0;
 }
+
+div.searchSection {
+	display: none;
+}
+
+#livesearch0 div.LSBox input.searchButton {
+	display: none;
+}
+
+
 
 .LSRes {
 	visibility: visible;
@@ -993,7 +1004,7 @@ dt.portletHeader  a {
 	background: #092e5f;
 	border-top: solid 1px #b5b3ae;
 	text-align: center;
-	padding: 20px;
+	padding: 9px 20px 6px;
 	color: #f1f7f9;
 	clear: both;
 	margin: 0;
@@ -1019,9 +1030,14 @@ dt.portletHeader  a {
 
 #headerTopRow {
 	clear: both;
-	height: 30px;
 	vertical-align: middle;
 	font-family: Verdana;
+	
+
+}
+
+div#topportlets.visualClear {
+	background: #DDD;
 }
 
 #headerTopRowLinks {
@@ -1029,7 +1045,21 @@ dt.portletHeader  a {
 	padding-left: 0px;
 	padding-top: 0px;
 	margin: 0px 0px 0px 0px;
+
 }
+
+#headerTopRowLinks a span {
+		opacity: 0.7;
+}
+
+
+ 
+
+#headerTopRowLinks a span:hover {
+	text-decoration: underline !important;
+	opacity: 1;
+}
+
 
 #headerTopRightColumn {
 	float: right;
@@ -1039,15 +1069,14 @@ dt.portletHeader  a {
 #headerTopRowLinks li {
 	float: left;
 	list-style-image: none;
-	font-size: 4px !important;
 }
 
 #headerTopRowLinks span {
 	float: left;
 	background-position: left center;
 	background-repeat: no-repeat;
-	margin-left: 10px;
-	padding: 4px 0px 5px 22px;
+	margin-left: 15px;
+	padding: 4px 0px 1px 22px;
 	vertical-align: middle;
 	height: 100%;
 }
@@ -1080,10 +1109,7 @@ dt.portletHeader  a {
 	margin-right: 20px;
 }
 
-#headerFunctionLinks a {
-	text-decoration: none;
-	color: Black;
-}
+ 
 
 #headerHFKLogo {
 	vertical-align: middle;
