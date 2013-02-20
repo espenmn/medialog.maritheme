@@ -661,8 +661,7 @@ dl.portalMessage {
 
 img.tileImage {
 	float: right;
-	border: 1px solid #889BB1;
-	margin-left: 15px;
+	margin-left: 25px;
 	margin-bottom: 10px;
 }
 
