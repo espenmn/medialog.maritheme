@@ -7,7 +7,7 @@
 <head>
     <div metal:fill-slot="javascript_head_slot" tal:omit-tag="">
         <link type="text/css" rel="kinetic-stylesheet"
-            tal:attributes="href string:${context/absolute_url}/++resource++manage-portlets.kss"/>
+            tal:attributes="href string:${context/absolute_url}/++resource++manage-topportlets.kss"/>
     </div>
 </head>
 <body>
