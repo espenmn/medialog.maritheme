@@ -29,7 +29,8 @@ setup(name='medialog.maritheme',
           'webcouturier.dropdownmenu',
           'wildcard.foldercontents',
           'medialog.portlet.placeholder',
-          'medialog.subskins'
+          'medialog.subskins',
+          'medialog.qrcode',
           # -*- Extra requirements: -*-
       ],
       entry_points="""
