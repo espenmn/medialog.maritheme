@@ -325,17 +325,6 @@ ul#portal-siteactions li img {
 
 /* @group Searching */
 
-#livesearch-advanced-search,
-#livesearch-all-items {
-	font-size: 0.85em;
-	margin-top: 1.25em;
-	font-family: Helvetica, Arial, sans-serif;
-	border-top: 1px solid #555;
-}
-
-#livesearch-all-items {
-	margin-top: 0;
-}
 
 div.searchSection {
 	display: none;
@@ -359,70 +348,18 @@ div.searchSection {
 	margin-left: 0;
 	line-height: 1.1em;
 }
+ 
 
-#LSHighlight,
-.LSHighlight {
-	background-color: #646464;
-	color: #fff;
-	border-radius: 5px;
-	-moz-border-radius: 5px;
-	-webkit-border-top-left-radius: 5px;
-	-webkit-border-top-right-radius: 5px;
-	-webkit-border-bottom-left-radius: 5px;
-	-webkit-border-bottom-right-radius: 5px;
-}
 
-.LSTable {
-	margin: 0;
-}
-
-.LSRow {
-	white-space: normal;
-	padding: 0;
-	margin: 0;
-	list-style-image: none;
-	list-style-type: none;
-	font-family: Georgia, Baskerville, Times, "Times New Roman", serif;
-}
-
-.LSRow a {
-	display: block;
-	padding: 0.31em 0.46em;
-	margin: 1px 0;
-	text-decoration: none;
-	color: #fff;
-	font-family: Helvetica, Arial, sans-serif;
-	position: relative;
-}
-
-#LSHighlight a,
-.LSHighlight a,
-.LSRow a:hover {
-	color: #fff;
-	text-shadow: 0 0 2px #333;
-}
-
-.LSDescr {
-	color: #aaa;
-	font-size: 0.8em;
-	font-weight: normal;
-	margin-left: 2.5em;
-	text-shadow: none;
-	font-family: Verdana, Helvetica, Arial, sans-serif;
-}
-
-#LSHighlight .LSDescr,
-.LSHighlight .LSDescr {
-	color: #f7f7f7;
-}
 
 .LSResult {
 	position: relative;
 	display: block;
 	text-align: right;
-	margin: 0;
+	padding: 10px; 
 	left: 3px;
 	z-index: 5;
+	height: 0;
 }
 
 .LSShadow {
@@ -441,16 +378,9 @@ div.searchSection {
 	text-align: left;
 	width: 30em;
 	text-transform: none;
-	margin: 0;
-	border: 1px solid #000000;
-	border-radius: 5px;
-	-moz-border-radius: 5px;
-	-webkit-border-top-left-radius: 5px;
-	-webkit-border-top-right-radius: 5px;
-	-webkit-border-bottom-left-radius: 5px;
-	-webkit-border-bottom-right-radius: 5px;
-	background-color: #000000;
-	background-color:  rgba(0, 0, 0, 0.9);
+	border: 1px solid #a3a4a3;
+
+	background-color: white;
 	box-shadow: 0px 0px 4px #777;
 	-moz-box-shadow: 0px 0px 4px #777;
 	-webkit-box-shadow: 0px 0px 4px #777;
@@ -477,7 +407,7 @@ div.searchSection {
 	padding: 0.76em 0.46em !important;
 	z-index: 20;
 	margin: 1px;
-	border: 1px solid #fff;
+	 
 	border-radius: 5px;
 	-moz-border-radius: 5px;
 	-webkit-border-top-left-radius: 5px;
