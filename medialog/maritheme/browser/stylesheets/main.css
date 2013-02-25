@@ -1,6 +1,8 @@
 /* @override 
 	http://localhost:8080/maritime/portal_css/Maritheme%20Theme/++resource++medialog.maritheme.stylesheets/main.css
 	http://maritime.medialog.no/portal_css/Maritheme%20Theme/resourcemedialog.maritheme.stylesheetsmain-cachekey4935.css
+	http://maritime.medialog.no/portal_css/Maritheme%20Theme/resourcemedialog.maritheme.stylesheetsmain-cachekey2873.css
+	http://maritime.medialog.no/portal_css/Maritheme%20Theme/base-cachekey7524.css
 */
 
 /* Stylesheet for the 'Maritheme Theme' Plone theme */
@@ -240,7 +242,7 @@ form.searchPage input.searchButton {
 }
 
 #portal-column-content {
-	padding: 20px 0;
+	padding: 20px;
 	background: #FFF;
 	min-width: 492px;
 }
