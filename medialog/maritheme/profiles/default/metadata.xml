@@ -2,9 +2,6 @@
 <metadata>
   <version>1000</version>
     <dependencies>
-    <dependency>profile-medialog.subskins:default</dependency>
     <dependency>profile-medialog.portlet.placeholder:default</dependency>
-   <dependency>profile-medialog.qrcode:default</dependency>
-	<dependency>profile-wildcard.foldercontents:default</dependency>
   </dependencies>
 </metadata>
