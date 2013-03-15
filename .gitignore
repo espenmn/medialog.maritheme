@@ -13,3 +13,5 @@ PasteDeploy-1.5.0-py2.7.egg
 Paste*
  
 medialog.maritheme.egg-info
+
+*.gz
