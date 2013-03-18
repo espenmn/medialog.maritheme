@@ -1,12 +1,5 @@
-/* @override 
-	http://localhost:8080/maritime/portal_css/Maritheme%20Theme/++resource++medialog.maritheme.stylesheets/main.css
-	http://maritime.medialog.no/portal_css/Maritheme%20Theme/resourcemedialog.maritheme.stylesheetsmain-cachekey4935.css
-	http://maritime.medialog.no/portal_css/Maritheme%20Theme/resourcemedialog.maritheme.stylesheetsmain-cachekey2873.css
-	http://maritime.medialog.no/portal_css/Maritheme%20Theme/base-cachekey7524.css
-*/
 
 /* Stylesheet for the 'Maritheme Theme' Plone theme */
-
 /* Espen Moe-Nilssen, 2012, espen at medialog dot no */
 
 body {
@@ -623,8 +616,6 @@ img.tileImage {
 
 a {
 	color: #003976;
-	font-size: 10pt;
-	font-family: Verdana, Arial, Helvetica, sans-serif;
 	text-decoration: underline;
 }
 
@@ -640,9 +631,6 @@ a:hover {
 
 a:visited {
 	color: #832328;
-/*
-
-#9d1f28*/
 }
 
 ul, ol {
@@ -984,68 +972,65 @@ div#topportlets.visualClear {
 		opacity: 0.7;
 }
 
-
+a.white {
+	color: white;
+	text-decoration: none;
+}
  
 
-#headerTopRowLinks a span:hover {
-	text-decoration: underline !important;
-	opacity: 1;
+/* @end */
+
+
+/* @group icons */
+.icons-on .contenttype-document {
+background: no-repeat transparent 0px 4px url(contenttypes-sprite.png);
 }
 
 
-#headerTopRightColumn {
-	float: right;
-	vertical-align: middle;
+.icons-on .contenttype-event {
+background: no-repeat transparent 0px -212px url(contenttypes-sprite.png);
+}
+.icons-on .contenttype-folder {
+background: no-repeat transparent 0px -644px url(contenttypes-sprite.png);
+}
+.icons-on .contenttype-link {
+background: no-repeat transparent 0px -1076px url(contenttypes-sprite.png);
+}
+.icons-on .contenttype-news-item {
+background: no-repeat transparent 0px -1292px url(contenttypes-sprite.png);
+}
+.icons-on .contenttype-plone-site {
+background: no-repeat transparent 0px -1508px url(contenttypes-sprite.png);
+}
+.icons-on .contenttype-collection {
+background: no-repeat transparent 0px -1724px url(contenttypes-sprite.png);
+}
+.icons-on .contenttype-topic {
+background: no-repeat transparent 0px -1724px url(contenttypes-sprite.png);
+}
+/* */
+.icons-on #plone-contentmenu-factories .contenttype-file {
+background: no-repeat transparent 0px -428px url(contenttypes-sprite.png);
+}
+.icons-on #plone-contentmenu-factories .contenttype-image {
+background: no-repeat transparent 0px -860px url(contenttypes-sprite.png);
 }
 
-#headerTopRowLinks li {
-	float: left;
-	list-style-image: none;
+.icons-on .contenttype-document,
+.icons-on .contenttype-event,
+.icons-on .contenttype-folder,
+.icons-on .contenttype-link,
+.icons-on .contenttype-news-item,
+.icons-on .contenttype-plone-site,
+.icons-on .contenttype-collection,
+.icons-on .contenttype-topic,
+.icons-on #plone-contentmenu-factories .contenttype-file,
+.icons-on #plone-contentmenu-factories .contenttype-image {
+line-height: 2em;
+display: inline-block;
+*display: block;
+padding-left: 20px !important;
 }
 
-#headerTopRowLinks span {
-	float: left;
-	background-position: left center;
-	background-repeat: no-repeat;
-	margin-left: 15px;
-	padding: 4px 0px 1px 22px;
-	vertical-align: middle;
-	height: 100%;
-}
-
-#headerTopRowLinks a {
-	color: Black;
-}
-
-#linkSkoleportalen {
-	background-image: url("skoleportalen_icon.gif");
-	cursor: pointer;
-}
-
-#linkItslearning {
-	background-image: url("its_learning.gif");
-	cursor: pointer;
-}
-
-#linkMyLibrary {
-	background-image: url("mittbibliotek.png");
-	cursor: pointer;
-}
-
-#linkEMail {
-	background-image: url("email.gif");
-	cursor: pointer;
-}
-
-#headerFunctionLinks {
-	margin-right: 20px;
-}
-
- 
-
-#headerHFKLogo {
-	vertical-align: middle;
-	border-style: none;
-}
 
 /* @end */

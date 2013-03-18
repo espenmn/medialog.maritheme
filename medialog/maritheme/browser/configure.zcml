@@ -72,22 +72,22 @@
     for more information about registering images as Zope 3 browser
     resources.
   -->
-  <browser:resourceDirectory
+  <!--browser:resourceDirectory
       name="medialog.maritheme.images"
       directory="images"
       layer=".interfaces.IThemeSpecific"
-      />
+      /-->
 
   <!-- Resource directory for stylesheets
     See medialog/maritheme/browser/stylesheets/README.txt
     for more information about registering stylesheets as Zope 3 browser
     resources.
   -->
-  <browser:resourceDirectory
+  <!--browser:resourceDirectory
       name="medialog.maritheme.stylesheets"
       directory="stylesheets"
       layer=".interfaces.IThemeSpecific"
-      />
+      /-->
       
 
 

@@ -1,7 +1,7 @@
 from setuptools import setup, find_packages
 import os
 
-version = '0.1'
+version = '0.1.2'
 
 setup(name='medialog.maritheme',
       version=version,
@@ -17,7 +17,7 @@ setup(name='medialog.maritheme',
       keywords='Plone Theme Maritheme',
       author='EMN',
       author_email='espen@medialog.no',
-      url='http://svn.plone.org/svn/collective/',
+      url='https://github.com/espenmn/medialog.maritheme/',
       license='GPL',
       packages=find_packages(exclude=['ez_setup']),
       namespace_packages=['medialog'],
@@ -29,7 +29,6 @@ setup(name='medialog.maritheme',
           'webcouturier.dropdownmenu',
           'wildcard.foldercontents',
           'medialog.portlet.placeholder',
-          'medialog.subskins',
           'medialog.qrcode',
           # -*- Extra requirements: -*-
       ],

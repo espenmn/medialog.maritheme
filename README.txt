@@ -1,6 +1,4 @@
 Introduction
-============
+=============
 
-
-
-Theme for Bergen Maritme website
+Theme for http://mariut.org/ website.
