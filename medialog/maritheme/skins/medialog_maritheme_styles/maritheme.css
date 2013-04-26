@@ -1,4 +1,3 @@
-
 /* Stylesheet for the 'Maritheme Theme' Plone theme */
 /* Espen Moe-Nilssen, 2012, espen at medialog dot no */
 
@@ -278,7 +277,6 @@ div#portal-personaltools-wrapper {
 }
 
 a#user-name {
-	color: white;
 	padding-left: 10px;
 }
 
@@ -292,11 +290,13 @@ ul#portal-personaltools li {
 }
 
 ul#portal-personaltools	a {
-	color: white !important;
+	color: #CCC;
+	text-decoration: none;
 }
 
 ul#portal-siteactions {
 	width: 650px;
+	margin-right: 50px;
 	height: 30px;
 	float: right;
 }
@@ -306,10 +306,13 @@ ul#portal-siteactions li {
 	list-style-image: none;
 	list-style-type: none;
 	padding: 0 10px;
-	border-right: 1px solid white;
+	border-right: 1px solid silver;
 	line-height: 20px;
 }
 
+ul#portal-siteactions li a {
+	text-decoration: none;
+}
 
 
 ul#portal-siteactions li img {
@@ -428,10 +431,6 @@ div.searchSection {
 	font-weight: normal;
 }
 
-ul#portal-siteactions li a {
-	color: white;
-	text-decoration: none;
-}
 
 /*Portal Search box*/
 
@@ -540,7 +539,6 @@ h3 {
 
 h4 {
 	font-size: 18px;
-	color: #ffffff;
 	padding-top: 2px;
 }
 
